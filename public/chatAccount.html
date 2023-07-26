@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatAccount</title>
+    <script src="./tailwind.js"></script>
+    <link rel="stylesheet" href="./css.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper w-[393px] h-[852px] border-2 border-black pt-[30px] rounded-[20px] m-auto mt-10">
+        <div class="header flex flex-col pr-[20px] ">
+            <div class="profile flex pl-[20px] items-center justify-between">
+                <div class="head flex items-center ">
+                    <a href="./chat.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"></path></svg>
+                    </a>
+                    <div class=" w-[50px] h-[50px] bg-orange-500 ml-[20px] rounded-full flex justify-center items-center">
+                        <p>GIC</p>
+                    </div>
+                    <p class=" text-[20px] ml-[10px]">GIC-Student</p>
+                </div>
+                <div class="icon flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path d="M9.36556 10.6821C10.302 12.3288 11.6712 13.698 13.3179 14.6344L14.2024 13.3961C14.4965 12.9845 15.0516 12.8573 15.4956 13.0998C16.9024 13.8683 18.4571 14.3353 20.0789 14.4637C20.599 14.5049 21 14.9389 21 15.4606V19.9234C21 20.4361 20.6122 20.8657 20.1022 20.9181C19.5723 20.9726 19.0377 21 18.5 21C9.93959 21 3 14.0604 3 5.5C3 4.96227 3.02742 4.42771 3.08189 3.89776C3.1343 3.38775 3.56394 3 4.07665 3H8.53942C9.0611 3 9.49513 3.40104 9.5363 3.92109C9.66467 5.54288 10.1317 7.09764 10.9002 8.50444C11.1427 8.9484 11.0155 9.50354 10.6039 9.79757L9.36556 10.6821ZM6.84425 10.0252L8.7442 8.66809C8.20547 7.50514 7.83628 6.27183 7.64727 5H5.00907C5.00303 5.16632 5 5.333 5 5.5C5 12.9558 11.0442 19 18.5 19C18.667 19 18.8337 18.997 19 18.9909V16.3527C17.7282 16.1637 16.4949 15.7945 15.3319 15.2558L13.9748 17.1558C13.4258 16.9425 12.8956 16.6915 12.3874 16.4061L12.3293 16.373C10.3697 15.2587 8.74134 13.6303 7.627 11.6707L7.59394 11.6126C7.30849 11.1044 7.05754 10.5742 6.84425 10.0252Z"></path></svg>
+                    <svg class="ml-[5px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM11 15H13V17H11V15ZM11 7H13V13H11V7Z"></path></svg>
+                </div>
+            </div>
+
+        <!-- top-bar -->
+            <div class="w-[393px] h-[2px] bg-black opacity-30 mt-[20px] "></div>
+            <div class="chat-scroll flex-col w-[390px] h-[638px] overflow-auto pl-[20px]  pr-[20px]">
+                <div class="header1 flex justify-between items-center mt-[10px]">  
+                    <div class="flex ">
+                        <img class="w-[45px] h-[45px] rounded-full mt-[10px]" src="/assets/image/pich.jpg" alt="">
+                        <div class="w-[180px] h-[40px] ml-[10px] mt-[10px] bg-[#D9D9D9] rounded-[50px] flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"><path d="M16 12L10 18V6L16 12Z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M5 7H7V17H5V7ZM1 10H3V14H1V10ZM9 2H11V20H9V2ZM13 4H15V22H13V4ZM17 7H19V17H17V7ZM21 10H23V14H21V10Z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M5 7H7V17H5V7ZM1 10H3V14H1V10ZM9 2H11V20H9V2ZM13 4H15V22H13V4ZM17 7H19V17H17V7ZM21 10H23V14H21V10Z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M5 7H7V17H5V7ZM1 10H3V14H1V10ZM9 2H11V20H9V2ZM13 4H15V22H13V4ZM17 7H19V17H17V7ZM21 10H23V14H21V10Z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M5 7H7V17H5V7ZM1 10H3V14H1V10ZM9 2H11V20H9V2ZM13 4H15V22H13V4ZM17 7H19V17H17V7ZM21 10H23V14H21V10Z"></path></svg>
+                            <p class="ml-[5px]" >0:05</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center ml-[40px]">11:02 pm
+                    <svg class="ml-[10px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M13 14H11C7.54202 14 4.53953 15.9502 3.03239 18.8107C3.01093 18.5433 3 18.2729 3 18C3 12.4772 7.47715 8 13 8V3L23 11L13 19V14Z"></path></svg>
+                </div>
+                <div class="header1 flex justify-end items-center mt-[10px]">  
+                    <div class="flex ">
+                        <div class="w-[150px] h-[40px] ml-[20px] mt-[10px] bg-[#D9D9D9] rounded-[50px] flex items-center">
+                            <p class="ml-[10px] mr-[5px]" >0:03</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M5 7H7V17H5V7ZM1 10H3V14H1V10ZM9 2H11V20H9V2ZM13 4H15V22H13V4ZM17 7H19V17H17V7ZM21 10H23V14H21V10Z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M5 7H7V17H5V7ZM1 10H3V14H1V10ZM9 2H11V20H9V2ZM13 4H15V22H13V4ZM17 7H19V17H17V7ZM21 10H23V14H21V10Z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M5 7H7V17H5V7ZM1 10H3V14H1V10ZM9 2H11V20H9V2ZM13 4H15V22H13V4ZM17 7H19V17H17V7ZM21 10H23V14H21V10Z"></path></svg>                            <svg class="mr-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"><path d="M8 12L14 6V18L8 12Z"></path></svg>                        </div>
+                    </div>
+                    
+                </div>
+                <img class="w-[250px] h-[200px] mt-[20px] ml-[60px]" src="/assets/image/internship.jpg" alt="">
+                <div class="header1 flex justify-between items-center mt-[10px]">  
+                    <div class="header1 flex justify-between items-center">  
+                        <div class="flex ">
+                            <img class="w-[45px] h-[45px] rounded-full mt-[10px]" src="/assets/image/ousa3.jpg" alt="">
+                            <div class="w-[180px] h-[40px] ml-[10px] mt-[10px] bg-[#D9D9D9] rounded-[50px] flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"><path d="M16 12L10 18V6L16 12Z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M5 7H7V17H5V7ZM1 10H3V14H1V10ZM9 2H11V20H9V2ZM13 4H15V22H13V4ZM17 7H19V17H17V7ZM21 10H23V14H21V10Z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M5 7H7V17H5V7ZM1 10H3V14H1V10ZM9 2H11V20H9V2ZM13 4H15V22H13V4ZM17 7H19V17H17V7ZM21 10H23V14H21V10Z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M5 7H7V17H5V7ZM1 10H3V14H1V10ZM9 2H11V20H9V2ZM13 4H15V22H13V4ZM17 7H19V17H17V7ZM21 10H23V14H21V10Z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M5 7H7V17H5V7ZM1 10H3V14H1V10ZM9 2H11V20H9V2ZM13 4H15V22H13V4ZM17 7H19V17H17V7ZM21 10H23V14H21V10Z"></path></svg>
+                                <p class="ml-[5px]" >0:05</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="header1 flex justify-between items-center mt-[10px]">  
+                    <div class="header1 flex justify-between items-center">  
+                        <div class="flex justify-center items-center">
+                            <img class="w-[45px] h-[45px] rounded-full mt-[10px]" src="/assets/image/ousa3.jpg" alt="">
+                            <div class="w-[290px] h-[60px] ml-[10px] mt-[10px] bg-[#D9D9D9] rounded-[50px] flex items-center">
+                                <p class="ml-[20px]">This is for who want to intern 
+                                    <br>during our vocation.</p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="header1 flex justify-between items-center mt-[10px]">  
+                    <div class="header1 flex justify-between items-center">  
+                        <div class="flex justify-center items-center">
+                            <img class="w-[45px] h-[45px] rounded-full mt-[10px]" src="/assets/image/Haitongmeng.jpg" alt="">
+                            <div class="w-[150px] h-[40px] ml-[10px] mt-[10px] bg-[#D9D9D9] rounded-[50px] flex items-center">
+                                <p class="ml-[20px]">Okay thank you.</p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="header1 flex justify-between items-center mt-[10px]">  
+                    <div class="header1 flex justify-between items-center">  
+                        <div class="flex justify-center items-center">
+                            <img class="w-[45px] h-[45px] rounded-full mt-[10px]" src="/assets/image/pheap.jpg" alt="">
+                            <div class="w-[150px] h-[40px] ml-[10px] mt-[10px] bg-[#D9D9D9] rounded-[50px] flex items-center">
+                                <p class="ml-[20px]">Hello everyone</p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="header1 flex justify-between items-center mt-[10px]">  
+                    <div class="header1 flex justify-between items-center">  
+                        <div class="flex justify-center items-center">
+                            <img class="w-[45px] h-[45px] rounded-full mt-[10px]" src="/assets/image/pheap.jpg" alt="">
+                            <div class="w-[250px] h-[40px] ml-[10px] mt-[10px] bg-[#D9D9D9] rounded-[50px] flex items-center">
+                                <p class="ml-[20px]">Do we have make up class tmr </p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                
+                <div class="header1 flex justify-end items-center mt-[10px]">  
+                    <div class="header1 flex justify-between items-center">  
+                        <div class="flex justify-center items-center">
+                            <div class="w-[290px] h-[40px] ml-[10px] mt-[10px] bg-[#D9D9D9] rounded-[50px] flex items-center">
+                                <p class="ml-[20px]">Yes at 7-9 am with teacher Hok Tin  </p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="header1 flex justify-between items-center mt-[10px]">  
+                    <div class="header1 flex justify-between items-center">  
+                        <div class="flex justify-center items-center">
+                            <img class="w-[45px] h-[45px] rounded-full mt-[10px]" src="/assets/image/pheap.jpg" alt="">
+                            <div class="w-[150px] h-[40px] ml-[10px] mt-[10px] bg-[#D9D9D9] rounded-[50px] flex items-center">
+                                <p class="ml-[20px]">Okay got it.</p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <!-- bottom-bar -->
+            <div class="w-[393px] h-[2px] bg-black opacity-30 mt-[10px]  pl-[20px] pr-[20px]"></div>
+            <div class=" w-[393px] h-[50px] flex justify-between items-center pl-[20px]">
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM7 13H9C9 14.6569 10.3431 16 12 16C13.6569 16 15 14.6569 15 13H17C17 15.7614 14.7614 18 12 18C9.23858 18 7 15.7614 7 13ZM8 11C7.17157 11 6.5 10.3284 6.5 9.5C6.5 8.67157 7.17157 8 8 8C8.82843 8 9.5 8.67157 9.5 9.5C9.5 10.3284 8.82843 11 8 11ZM16 11C15.1716 11 14.5 10.3284 14.5 9.5C14.5 8.67157 15.1716 8 16 8C16.8284 8 17.5 8.67157 17.5 9.5C17.5 10.3284 16.8284 11 16 11Z" fill="rgba(240,187,64,1)"></path></svg>
+                    <p class="ml-[10px]">Message..........</p>
+                </div>
+                <div class="flex pr-[20px]">
+                    <svg class="mr-[10px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path d="M18 15L17.999 18H21V20H17.999L18 23H16L15.999 20H13V18H15.999L16 15H18ZM11 18V20H3V18H11ZM21 11V13H3V11H21ZM21 4V6H3V4H21Z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path d="M11.9998 3C10.3429 3 8.99976 4.34315 8.99976 6V10C8.99976 11.6569 10.3429 13 11.9998 13C13.6566 13 14.9998 11.6569 14.9998 10V6C14.9998 4.34315 13.6566 3 11.9998 3ZM11.9998 1C14.7612 1 16.9998 3.23858 16.9998 6V10C16.9998 12.7614 14.7612 15 11.9998 15C9.23833 15 6.99976 12.7614 6.99976 10V6C6.99976 3.23858 9.23833 1 11.9998 1ZM3.05469 11H5.07065C5.55588 14.3923 8.47329 17 11.9998 17C15.5262 17 18.4436 14.3923 18.9289 11H20.9448C20.4837 15.1716 17.1714 18.4839 12.9998 18.9451V23H10.9998V18.9451C6.82814 18.4839 3.51584 15.1716 3.05469 11Z"></path></svg>
+                </div>
+            </div>
+            <div class="w-[393px] h-[2px] bg-black opacity-30 pl-[20px] pr-[20px]"></div>
+            <div class="bottom-bar flex mt-[10px]  pl-[20px] pr-[20px]">
+                <a href="./index.html">
+                    <svg class="ml-[11px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M19 21.0001H5C4.44772 21.0001 4 20.5524 4 20.0001V11.0001L1 11.0001L11.3273 1.61162C11.7087 1.26488 12.2913 1.26488 12.6727 1.61162L23 11.0001L20 11.0001V20.0001C20 20.5524 19.5523 21.0001 19 21.0001ZM13 19.0001H18V9.15757L12 3.70302L6 9.15757V19.0001H11V13.0001H13V19.0001Z"></path></svg>            </a>
+                </a>
+                <a href="./Friend.html">
+                    <svg class="ml-[53px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M2 22C2 17.5817 5.58172 14 10 14C14.4183 14 18 17.5817 18 22H16C16 18.6863 13.3137 16 10 16C6.68629 16 4 18.6863 4 22H2ZM10 13C6.685 13 4 10.315 4 7C4 3.685 6.685 1 10 1C13.315 1 16 3.685 16 7C16 10.315 13.315 13 10 13ZM10 11C12.21 11 14 9.21 14 7C14 4.79 12.21 3 10 3C7.79 3 6 4.79 6 7C6 9.21 7.79 11 10 11ZM18.2837 14.7028C21.0644 15.9561 23 18.752 23 22H21C21 19.564 19.5483 17.4671 17.4628 16.5271L18.2837 14.7028ZM17.5962 3.41321C19.5944 4.23703 21 6.20361 21 8.5C21 11.3702 18.8042 13.7252 16 13.9776V11.9646C17.6967 11.7222 19 10.264 19 8.5C19 7.11935 18.2016 5.92603 17.041 5.35635L17.5962 3.41321Z"></path></svg>
+                </a>
+                <a href="./library.html">
+                    <svg class="ml-[53px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M13 21V23H11V21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H9C10.1947 3 11.2671 3.52375 12 4.35418C12.7329 3.52375 13.8053 3 15 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H13ZM20 19V5H15C13.8954 5 13 5.89543 13 7V19H20ZM11 19V7C11 5.89543 10.1046 5 9 5H4V19H11Z"></path></svg>
+                <a href="./chat.html">
+                    <svg class="ml-[53px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M7.29117 20.8242L2 22L3.17581 16.7088C2.42544 15.3056 2 13.7025 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C10.2975 22 8.6944 21.5746 7.29117 20.8242ZM7.58075 18.711L8.23428 19.0605C9.38248 19.6745 10.6655 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 13.3345 4.32549 14.6175 4.93949 15.7657L5.28896 16.4192L4.63416 19.3658L7.58075 18.711Z" fill="rgba(108,99,255,1)"></path></svg>            </a>
+                <a href="./setting.html">
+                    <svg class="ml-[53px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
